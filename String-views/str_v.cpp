@@ -2,14 +2,16 @@
 #include <string>
 #include <string_view>
 
-void printSV(std::string_view str) // now a std::string_view, creates a view of the argument
+std::string getName()
 {
-    std::cout << str << '\n';
+    std::string s{"Alex"};
+    return s;
 }
 
 int main()
 {
-    printSV("Hi!!!");
+    // std::string_view name{getName()};
+    std::cout << std::string_view{getName()} << '\n'; // undefined behavior
 
     return 0;
 }
