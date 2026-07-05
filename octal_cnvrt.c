@@ -23,6 +23,8 @@ int main(void)
 
     rem_5 = div_4 % 8;
 
+    printf("The octal value is: %d%d%d%d%d\n", rem_5, rem_4, rem_3, rem_2, rem_1);
+
     // im just adding a comment alright.
 
     // this is just to test the test branch merge
